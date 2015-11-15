@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "POIButtonActionSheetController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -21,7 +22,7 @@
     [super viewDidLoad];
     self.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleExecutableKey];
     
-    NSArray *titles = @[@"弹出自定义按钮选项",@"弹出自定义视图",@"浮窗"];
+    NSArray *titles = @[@"POIButtonActionSheet",@"POICustomViewActionSheet",@"浮窗"];
     self.titles = titles;
 }
 
@@ -43,8 +44,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    if (indexPath.row == 0) {
+        POIButtonActionSheetController *vc = [storyBoard instantiateViewControllerWithIdentifier:@"buttonActionSheet"];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.row == 1) {
+        
+    }
+    if (indexPath.row == 2) {
+        
+    }
     
 }
 

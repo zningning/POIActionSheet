@@ -15,6 +15,7 @@
 		BDFA005F1BF8A31800464F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFA005D1BF8A31800464F24 /* LaunchScreen.storyboard */; };
 		BDFA00681BF8A6E200464F24 /* POIBaseActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA00671BF8A6E200464F24 /* POIBaseActionSheet.m */; };
 		BDFA006F1BF8A71500464F24 /* POIButtonActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA006B1BF8A71500464F24 /* POIButtonActionSheet.m */; };
+		BDFA00751BF8ABA800464F24 /* POIButtonActionSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA00741BF8ABA800464F24 /* POIButtonActionSheetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		BDFA00671BF8A6E200464F24 /* POIBaseActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIBaseActionSheet.m; sourceTree = "<group>"; };
 		BDFA006A1BF8A71500464F24 /* POIButtonActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIButtonActionSheet.h; sourceTree = "<group>"; };
 		BDFA006B1BF8A71500464F24 /* POIButtonActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIButtonActionSheet.m; sourceTree = "<group>"; };
+		BDFA00731BF8ABA800464F24 /* POIButtonActionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIButtonActionSheetController.h; sourceTree = "<group>"; };
+		BDFA00741BF8ABA800464F24 /* POIButtonActionSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIButtonActionSheetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 		BDFA004E1BF8A31800464F24 /* POIActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				BDFA00721BF8AB4000464F24 /* Controllers */,
 				BDFA00691BF8A6E700464F24 /* sheet */,
 				BDFA00521BF8A31800464F24 /* AppDelegate.h */,
 				BDFA00531BF8A31800464F24 /* AppDelegate.m */,
@@ -95,6 +99,15 @@
 				BDFA00671BF8A6E200464F24 /* POIBaseActionSheet.m */,
 			);
 			name = sheet;
+			sourceTree = "<group>";
+		};
+		BDFA00721BF8AB4000464F24 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDFA00731BF8ABA800464F24 /* POIButtonActionSheetController.h */,
+				BDFA00741BF8ABA800464F24 /* POIButtonActionSheetController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFA00751BF8ABA800464F24 /* POIButtonActionSheetController.m in Sources */,
 				BDFA00571BF8A31800464F24 /* ViewController.m in Sources */,
 				BDFA00681BF8A6E200464F24 /* POIBaseActionSheet.m in Sources */,
 				BDFA00541BF8A31800464F24 /* AppDelegate.m in Sources */,

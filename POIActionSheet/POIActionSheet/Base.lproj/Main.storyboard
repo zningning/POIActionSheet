@@ -58,5 +58,110 @@
             </objects>
             <point key="canvasLocation" x="536" y="-383"/>
         </scene>
+        <!--Button Action Sheet Controller-->
+        <scene sceneID="Ljf-uj-B5L">
+            <objects>
+                <viewController storyboardIdentifier="buttonActionSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Iju-lr-8yk" customClass="POIButtonActionSheetController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qir-RE-kjA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gkh-45-16V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="buttonActionSheet" id="zk7-8v-eiM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ADZ-jx-QTn">
+                                <rect key="frame" x="243" y="135" width="327" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="SYl-3J-p9z"/>
+                                    <constraint firstAttribute="height" constant="30" id="aeh-a9-aEi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SYl-3J-p9z"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="button title（divide by ,）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z30-E5-h36">
+                                <rect key="frame" x="30" y="139" width="195.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETS-QP-ibA">
+                                <rect key="frame" x="175" y="209" width="249" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="IRg-r4-bcU"/>
+                                    <constraint firstAttribute="height" constant="30" id="SxE-56-QfP"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="clickShow:" destination="Iju-lr-8yk" eventType="touchUpInside" id="Wrc-XW-NfL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z30-E5-h36" firstAttribute="top" secondItem="qir-RE-kjA" secondAttribute="bottom" constant="119" id="B11-dP-0U3"/>
+                            <constraint firstItem="z30-E5-h36" firstAttribute="leading" secondItem="zk7-8v-eiM" secondAttribute="leadingMargin" constant="10" id="LnC-bG-SKf"/>
+                            <constraint firstItem="ADZ-jx-QTn" firstAttribute="leading" secondItem="z30-E5-h36" secondAttribute="trailing" constant="17.5" id="MVK-vq-xDF"/>
+                            <constraint firstItem="ETS-QP-ibA" firstAttribute="top" secondItem="ADZ-jx-QTn" secondAttribute="bottom" constant="44" id="a0p-3N-LgH"/>
+                            <constraint firstItem="ADZ-jx-QTn" firstAttribute="centerY" secondItem="z30-E5-h36" secondAttribute="centerY" id="dfl-4s-1LU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ADZ-jx-QTn" secondAttribute="trailing" constant="10" id="lat-zH-BoP"/>
+                            <constraint firstItem="ETS-QP-ibA" firstAttribute="centerY" secondItem="zk7-8v-eiM" secondAttribute="centerY" id="lwa-fn-A09"/>
+                            <constraint firstItem="ETS-QP-ibA" firstAttribute="centerX" secondItem="zk7-8v-eiM" secondAttribute="centerX" id="pbq-xz-GTe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lwa-fn-A09"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="ADZ-jx-QTn" id="s5C-rj-xE4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajx-vv-pAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295" y="-920"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ttG-PQ-kKg">
+            <objects>
+                <viewController id="6Ms-ww-IXd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="luX-GQ-TkY"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Nf-vt-35R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ad8-aE-8d4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AyK-VM-PYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297" y="-220"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SID-vk-K0l">
+            <objects>
+                <viewController id="QcE-2o-bYK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y19-6J-OIm"/>
+                        <viewControllerLayoutGuide type="bottom" id="2db-B5-FIS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FCQ-X1-Y2e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qT-7i-qAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293" y="476"/>
+        </scene>
     </scenes>
 </document>

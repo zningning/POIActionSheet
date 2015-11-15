@@ -14,6 +14,10 @@
 
 @interface POIBaseActionSheet : UIView
 
+// 遮罩颜色 & 遮罩透明度
+@property (nonatomic, strong) UIColor *shadownColor;
+@property (nonatomic, assign) CGFloat shadownAlpha;
+
 /**
  *  点击遮罩可以隐藏吗？
  *  default YES

@@ -36,6 +36,7 @@
 - (void)setup{
     _isShow = NO;
     _shadownCanDismiss = YES;
+    _shadownAlpha = 0.3;
     self.frame = [UIScreen mainScreen].bounds;
     UIView *shadowView = [[UIView alloc] initWithFrame:self.frame];
     [shadowView setAlpha:0];
@@ -59,11 +60,11 @@
 
 - (void)show{
     self.containerWindown.hidden = NO;
-    [UIView animateWithDuration:0.3f
+    [UIView animateWithDuration:0.3
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         self.shadowView.alpha = 0.3;
+                         self.shadowView.alpha = self.shadownAlpha;
                          self.shadowView.userInteractionEnabled = YES;
                          CGRect frame = self.customView.frame;
                          frame.origin.y -= frame.size.height;
@@ -110,6 +111,11 @@
         _containerWindown.hidden = NO;
     }
     return _containerWindown;
+}
+
+- (void)setShadownColor:(UIColor *)shadownColor{
+    _shadownColor = shadownColor;
+    self.shadowView.backgroundColor = shadownColor;
 }
 
 - (void)dealloc{

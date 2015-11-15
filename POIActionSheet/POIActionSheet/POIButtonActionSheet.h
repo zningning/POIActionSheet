@@ -11,6 +11,7 @@
 @class POIButtonActionSheet;
 @protocol POIButtonActionSheetDelegate <NSObject>
 
+@optional
 - (void)POIButtonActionSheet:(POIButtonActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end
@@ -32,6 +33,7 @@ typedef void (^clickBlock)(NSInteger index);
  */
 
 - (id)initWithDelegate:(id<POIButtonActionSheetDelegate>)delegate cancleButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtonTitlesArray;
+
 /**
 
  */
