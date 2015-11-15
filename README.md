@@ -3,6 +3,6 @@
 实现效果入下图
 ![](http://7xn5wd.com1.z0.glb.clouddn.com/4.pic.jpg)
 ![](http://7xn5wd.com1.z0.glb.clouddn.com/5.pic.jpg)
-![](http://7xn5wd.com1.z0.glb.clouddn.com/6.pic.jpg)
+![](http://7xn5wd.com1.z0.glb.clouddn.com/7.pic.jpg)
 
  使用 参考demo
