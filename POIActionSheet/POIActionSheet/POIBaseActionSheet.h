@@ -37,6 +37,8 @@
 - (void)setupCustomView:(UIView *)view;
 
 - (void)show;
+- (void)showWithPoint:(CGPoint)point;
+
 - (void)dismiss;
 
 @end

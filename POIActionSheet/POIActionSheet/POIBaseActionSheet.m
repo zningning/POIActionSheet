@@ -59,6 +59,10 @@
 }
 
 - (void)show{
+    [self showWithPoint:CGPointMake(self.customView.frame.origin.x, self.customView.frame.origin.y - POIScreenSizeHeight*2 + self.customView.frame.size.height)];
+}
+
+- (void)showWithPoint:(CGPoint)point{
     self.containerWindown.hidden = NO;
     [UIView animateWithDuration:0.3
                           delay:0
@@ -67,12 +71,12 @@
                          self.shadowView.alpha = self.shadownAlpha;
                          self.shadowView.userInteractionEnabled = YES;
                          CGRect frame = self.customView.frame;
-                         frame.origin.y -= frame.size.height;
+                         frame.origin.x = point.x;
+                         frame.origin.y = -point.y;
                          self.customView.frame = frame;
                      } completion:^(BOOL finished) {
                          self.isShow = YES;
                      }];
-    
 }
 
 - (void)dismiss{
