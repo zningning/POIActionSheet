@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dQe-we-449">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dQe-we-449">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="1295" y="-920"/>
         </scene>
-        <!--View Controller-->
+        <!--Custom Alert View Controller-->
         <scene sceneID="ttG-PQ-kKg">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ms-ww-IXd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="alertSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ms-ww-IXd" customClass="POICustomAlertViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="luX-GQ-TkY"/>
                         <viewControllerLayoutGuide type="bottom" id="0Nf-vt-35R"/>
@@ -138,7 +138,24 @@
                     <view key="view" contentMode="scaleToFill" id="ad8-aE-8d4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1b-jO-wJa">
+                                <rect key="frame" x="200" y="108" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rsj-jI-svB"/>
+                                    <constraint firstAttribute="width" constant="200" id="dZS-J7-G15"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="clickShow:" destination="6Ms-ww-IXd" eventType="touchUpInside" id="Eba-v0-u9E"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A1b-jO-wJa" firstAttribute="centerX" secondItem="ad8-aE-8d4" secondAttribute="centerX" id="G4a-rH-8K2"/>
+                            <constraint firstItem="A1b-jO-wJa" firstAttribute="top" secondItem="luX-GQ-TkY" secondAttribute="bottom" constant="88" id="y28-k5-9hg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AyK-VM-PYF" userLabel="First Responder" sceneMemberID="firstResponder"/>

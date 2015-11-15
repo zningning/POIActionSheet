@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BDBE099E1BF8B4DB0077D9EA /* POICustomViewActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBE099D1BF8B4DB0077D9EA /* POICustomViewActionSheet.m */; };
 		BDBE09A21BF8B6C90077D9EA /* POICustomActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBE09A11BF8B6C90077D9EA /* POICustomActionSheetViewController.m */; };
+		BDC2AA971BF8F44F001F06BF /* POICustomAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC2AA961BF8F44F001F06BF /* POICustomAlertViewController.m */; };
+		BDC2AA9A1BF8F5D5001F06BF /* POICustomAlertActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC2AA991BF8F5D5001F06BF /* POICustomAlertActionSheet.m */; };
 		BDFA00511BF8A31800464F24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA00501BF8A31800464F24 /* main.m */; };
 		BDFA00541BF8A31800464F24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA00531BF8A31800464F24 /* AppDelegate.m */; };
 		BDFA00571BF8A31800464F24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA00561BF8A31800464F24 /* ViewController.m */; };
@@ -25,6 +27,10 @@
 		BDBE099D1BF8B4DB0077D9EA /* POICustomViewActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POICustomViewActionSheet.m; sourceTree = "<group>"; };
 		BDBE09A01BF8B6C90077D9EA /* POICustomActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POICustomActionSheetViewController.h; sourceTree = "<group>"; };
 		BDBE09A11BF8B6C90077D9EA /* POICustomActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POICustomActionSheetViewController.m; sourceTree = "<group>"; };
+		BDC2AA951BF8F44F001F06BF /* POICustomAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POICustomAlertViewController.h; sourceTree = "<group>"; };
+		BDC2AA961BF8F44F001F06BF /* POICustomAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POICustomAlertViewController.m; sourceTree = "<group>"; };
+		BDC2AA981BF8F5D5001F06BF /* POICustomAlertActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POICustomAlertActionSheet.h; sourceTree = "<group>"; };
+		BDC2AA991BF8F5D5001F06BF /* POICustomAlertActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POICustomAlertActionSheet.m; sourceTree = "<group>"; };
 		BDFA004C1BF8A31800464F24 /* POIActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POIActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFA00501BF8A31800464F24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDFA00521BF8A31800464F24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +65,8 @@
 			children = (
 				BDBE099C1BF8B4DB0077D9EA /* POICustomViewActionSheet.h */,
 				BDBE099D1BF8B4DB0077D9EA /* POICustomViewActionSheet.m */,
+				BDC2AA981BF8F5D5001F06BF /* POICustomAlertActionSheet.h */,
+				BDC2AA991BF8F5D5001F06BF /* POICustomAlertActionSheet.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -124,6 +132,8 @@
 				BDFA00741BF8ABA800464F24 /* POIButtonActionSheetController.m */,
 				BDBE09A01BF8B6C90077D9EA /* POICustomActionSheetViewController.h */,
 				BDBE09A11BF8B6C90077D9EA /* POICustomActionSheetViewController.m */,
+				BDC2AA951BF8F44F001F06BF /* POICustomAlertViewController.h */,
+				BDC2AA961BF8F44F001F06BF /* POICustomAlertViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -200,9 +210,11 @@
 			files = (
 				BDBE09A21BF8B6C90077D9EA /* POICustomActionSheetViewController.m in Sources */,
 				BDFA00751BF8ABA800464F24 /* POIButtonActionSheetController.m in Sources */,
+				BDC2AA9A1BF8F5D5001F06BF /* POICustomAlertActionSheet.m in Sources */,
 				BDFA00571BF8A31800464F24 /* ViewController.m in Sources */,
 				BDBE099E1BF8B4DB0077D9EA /* POICustomViewActionSheet.m in Sources */,
 				BDFA00681BF8A6E200464F24 /* POIBaseActionSheet.m in Sources */,
+				BDC2AA971BF8F44F001F06BF /* POICustomAlertViewController.m in Sources */,
 				BDFA00541BF8A31800464F24 /* AppDelegate.m in Sources */,
 				BDFA00511BF8A31800464F24 /* main.m in Sources */,
 				BDFA006F1BF8A71500464F24 /* POIButtonActionSheet.m in Sources */,
