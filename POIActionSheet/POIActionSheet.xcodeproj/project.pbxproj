@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDBE099E1BF8B4DB0077D9EA /* POICustomViewActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBE099D1BF8B4DB0077D9EA /* POICustomViewActionSheet.m */; };
+		BDBE09A21BF8B6C90077D9EA /* POICustomActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBE09A11BF8B6C90077D9EA /* POICustomActionSheetViewController.m */; };
 		BDFA00511BF8A31800464F24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA00501BF8A31800464F24 /* main.m */; };
 		BDFA00541BF8A31800464F24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA00531BF8A31800464F24 /* AppDelegate.m */; };
 		BDFA00571BF8A31800464F24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFA00561BF8A31800464F24 /* ViewController.m */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDBE099C1BF8B4DB0077D9EA /* POICustomViewActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POICustomViewActionSheet.h; sourceTree = "<group>"; };
+		BDBE099D1BF8B4DB0077D9EA /* POICustomViewActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POICustomViewActionSheet.m; sourceTree = "<group>"; };
+		BDBE09A01BF8B6C90077D9EA /* POICustomActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POICustomActionSheetViewController.h; sourceTree = "<group>"; };
+		BDBE09A11BF8B6C90077D9EA /* POICustomActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POICustomActionSheetViewController.m; sourceTree = "<group>"; };
 		BDFA004C1BF8A31800464F24 /* POIActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POIActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFA00501BF8A31800464F24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDFA00521BF8A31800464F24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDBE099F1BF8B4E40077D9EA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BDBE099C1BF8B4DB0077D9EA /* POICustomViewActionSheet.h */,
+				BDBE099D1BF8B4DB0077D9EA /* POICustomViewActionSheet.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
 		BDFA00431BF8A31800464F24 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +82,7 @@
 		BDFA004E1BF8A31800464F24 /* POIActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				BDBE099F1BF8B4E40077D9EA /* Custom */,
 				BDFA00721BF8AB4000464F24 /* Controllers */,
 				BDFA00691BF8A6E700464F24 /* sheet */,
 				BDFA00521BF8A31800464F24 /* AppDelegate.h */,
@@ -106,6 +122,8 @@
 			children = (
 				BDFA00731BF8ABA800464F24 /* POIButtonActionSheetController.h */,
 				BDFA00741BF8ABA800464F24 /* POIButtonActionSheetController.m */,
+				BDBE09A01BF8B6C90077D9EA /* POICustomActionSheetViewController.h */,
+				BDBE09A11BF8B6C90077D9EA /* POICustomActionSheetViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -180,8 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDBE09A21BF8B6C90077D9EA /* POICustomActionSheetViewController.m in Sources */,
 				BDFA00751BF8ABA800464F24 /* POIButtonActionSheetController.m in Sources */,
 				BDFA00571BF8A31800464F24 /* ViewController.m in Sources */,
+				BDBE099E1BF8B4DB0077D9EA /* POICustomViewActionSheet.m in Sources */,
 				BDFA00681BF8A6E200464F24 /* POIBaseActionSheet.m in Sources */,
 				BDFA00541BF8A31800464F24 /* AppDelegate.m in Sources */,
 				BDFA00511BF8A31800464F24 /* main.m in Sources */,
@@ -335,6 +355,7 @@
 				BDFA00651BF8A31800464F24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

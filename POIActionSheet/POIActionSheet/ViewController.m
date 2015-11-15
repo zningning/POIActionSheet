@@ -12,6 +12,7 @@
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray *storyBoardIds;
 
 @end
 
@@ -22,8 +23,8 @@
     [super viewDidLoad];
     self.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleExecutableKey];
     
-    NSArray *titles = @[@"POIButtonActionSheet",@"POICustomViewActionSheet",@"浮窗"];
-    self.titles = titles;
+    self.storyBoardIds = @[@"buttonActionSheet", @"customActionSheet", @"alertSheet"];
+    self.titles = @[@"POIButtonActionSheet", @"POICustomViewActionSheet", @"POIAlertSheet"];
 }
 
 #pragma mark UITableViewDataSource UITableViewDelegate
@@ -45,19 +46,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    if (indexPath.row == 0) {
-        POIButtonActionSheetController *vc = [storyBoard instantiateViewControllerWithIdentifier:@"buttonActionSheet"];
+    UIViewController *vc = [storyBoard instantiateViewControllerWithIdentifier:self.storyBoardIds[indexPath.row]];
+    if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
     }
-    if (indexPath.row == 1) {
-        
-    }
-    if (indexPath.row == 2) {
-        
-    }
-    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -87,7 +87,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="button title（divide by ,）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z30-E5-h36">
                                 <rect key="frame" x="30" y="139" width="195.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETS-QP-ibA">
@@ -130,7 +130,7 @@
         <!--View Controller-->
         <scene sceneID="ttG-PQ-kKg">
             <objects>
-                <viewController id="6Ms-ww-IXd" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Ms-ww-IXd" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="luX-GQ-TkY"/>
                         <viewControllerLayoutGuide type="bottom" id="0Nf-vt-35R"/>
@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="1297" y="-220"/>
         </scene>
-        <!--View Controller-->
+        <!--Custom Action Sheet View Controller-->
         <scene sceneID="SID-vk-K0l">
             <objects>
-                <viewController id="QcE-2o-bYK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customActionSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QcE-2o-bYK" customClass="POICustomActionSheetViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y19-6J-OIm"/>
                         <viewControllerLayoutGuide type="bottom" id="2db-B5-FIS"/>
@@ -156,7 +156,36 @@
                     <view key="view" contentMode="scaleToFill" id="FCQ-X1-Y2e">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeO-ea-67j">
+                                <rect key="frame" x="200" y="120" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5fh-vE-Swe"/>
+                                    <constraint firstAttribute="height" constant="40" id="Own-Bp-jWK"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="clickShow:" destination="QcE-2o-bYK" eventType="touchUpInside" id="m6Z-iS-ZW5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VeO-ea-67j" firstAttribute="centerX" secondItem="FCQ-X1-Y2e" secondAttribute="centerX" id="0cm-ps-FHv"/>
+                            <constraint firstItem="VeO-ea-67j" firstAttribute="top" secondItem="y19-6J-OIm" secondAttribute="bottom" constant="100" id="3Fk-UU-gj3"/>
+                            <constraint firstItem="VeO-ea-67j" firstAttribute="height" secondItem="FCQ-X1-Y2e" secondAttribute="height" constant="40" id="Fwb-aa-E30"/>
+                            <constraint firstItem="VeO-ea-67j" firstAttribute="centerY" secondItem="FCQ-X1-Y2e" secondAttribute="centerY" id="GUa-fh-lJp"/>
+                            <constraint firstItem="VeO-ea-67j" firstAttribute="width" secondItem="FCQ-X1-Y2e" secondAttribute="width" constant="100" id="lu9-Y3-XMh"/>
+                            <constraint firstItem="VeO-ea-67j" firstAttribute="centerX" secondItem="FCQ-X1-Y2e" secondAttribute="centerX" id="xp6-X7-qcZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0cm-ps-FHv"/>
+                                <exclude reference="Fwb-aa-E30"/>
+                                <exclude reference="GUa-fh-lJp"/>
+                                <exclude reference="lu9-Y3-XMh"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qT-7i-qAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
